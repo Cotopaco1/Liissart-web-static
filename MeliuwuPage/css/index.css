@@ -8,25 +8,31 @@
     --negro: #000;
     --gris: #756969;
     --gris-claro: #9C8F8F;
+    --cafe: #623D23;
+
     /*Grosor letra */
     --chica: light;
     --mediana: normal;
     --grande: bold;
 
     /*Tamaño leetra */
-    --Letra-pequeña: 0.7rem;
-    --Letra-mediana: 1.5rem;
-    --Letra-grande: 2rem;
+    --Letra-pequeña: 1.4rem;
+    --Letra-mediana: 3rem;
+    --Letra-grande: 4rem;
 
 }
 html{
-    font-size: 62.5;
+    font-size: 62.5%;
     box-sizing: border-box;
+    font-optical-sizing: auto;
 
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 body{
-    font-size: 16px;
+    
     font-family: "Krub", sans-serif;
     background-color: rgb(242, 189, 224);
     display: flex;
@@ -160,12 +166,8 @@ border-bottom: unset;
 .main{
     display: grid;
     row-gap: 1rem;
-    margin: 2rem auto;
-    max-width: 120rem;
-    width: 90%;
-    
-
-    
+    margin: 4rem auto;
+    width: min(90%, 120rem); 
     
 }
 
@@ -200,7 +202,7 @@ border-bottom: unset;
     display: flex!important;
     gap: 0.2rem;
     justify-content: center;
-    
+    font-size: var(--Letra-pequeña);
     
 }
 .redes-top__imagen{
@@ -255,7 +257,7 @@ span{
 /* Main contenedor */
 .contenido-comisiones{
     width: 70%;
-    margin: 0 auto;
+    margin: 4rem auto;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -274,6 +276,10 @@ span{
 .producto{
     gap: 3rem;
 }
+.producto-descripcion{
+    font-size: var(--Letra-pequeña);
+}
+
 @media (min-width:768px ) {
      
     .producto{
@@ -354,15 +360,18 @@ span{
     flex-direction: column;
     gap: 2rem;
     width: 80%;
-    margin: 2rem auto;
+    margin: 4rem auto;
 }
 .contenedor-terminos-servicio__descripcion p{
     text-align: left;
+    font-size: var(--Letra-pequeña);
 }
 .contenedor-terminos-servicio__titulo{
     text-align: center;
     margin: 0;
+    color: var(--cafe);
 }
+
 
 @media (min-width: 768px) {
      .contenedor-terminos-servicio{
@@ -394,6 +403,9 @@ span{
     object-fit: cover;
     border-radius: 1rem;
 }
+.contenedor-main-sobreMi__contenido{
+    font-size: var(--Letra-pequeña);
+}
 
 .contenedor-main-sobreMi__contenido p{
     text-align: left;
@@ -402,7 +414,7 @@ span{
 .contenedor-main-sobreMi__contenido h2{
     text-align: center;
     font-weight: bolder;
-    font-size: 1rem;
+    
     
 }
 .contenedor-main-sobreMi__contenido__input-sumbit{
