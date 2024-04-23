@@ -1,0 +1,141 @@
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-image: url(https://i.pinimg.com/originals/0b/6d/83/0b6d83022b5326ca71c715e7c1743dfb.jpg);
+    height: 100vh;
+    width: 100%;
+    font-family: 'Arima', cursive;
+}
+
+/* Utilidades */
+
+.wd-100{
+    width: 100%;
+}
+/* */
+
+header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 0%;
+    opacity: 0.6;
+    position: relative;
+    
+}
+
+header a{
+    text-decoration: none;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 5px;
+
+}
+
+header h1{
+    width: 100% ;
+    padding: 16 px;
+    margin: 0;
+    font-weight: 900;
+}
+
+.main{
+    padding: 3rem;
+    display: grid;
+    row-gap: 2rem;
+}
+
+@media (min-width: 500px)    {
+    .main{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+    }
+     
+}
+
+
+
+
+section{
+    text-align: center;
+    
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+section h1{
+
+    background-color: papayawhip;
+    font-weight: 500;
+    background: rgba(51, 170, 51, .7)
+    
+   
+}
+section input{
+    width: 300px;
+    height: 30px;
+    margin: 16px;
+    border-radius: 8px;
+}
+section input::placeholder{
+    text-align: center;
+    align-items: center;
+}
+section p{
+    border: 1px solid none;
+    
+    height: 150px;
+    width:  300px;
+    font-size: xx-large;
+    
+    border-radius: 8px;
+    
+}
+section button{
+    margin: 16px;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #31E5A6;
+    border: none;
+    transition: transform 0.3s ease;
+}
+section button:hover{
+    transform: scale(1.1);
+}
+.vikingos{
+    
+    
+    width:100%;
+    border-radius: 16%;
+    opacity: 0.8;
+
+}
+.stephy{
+    
+    
+    width: 100% ;
+    
+    border-radius: 16%;
+    opacity: 0.8;
+}
+.firma{
+    position: absolute;
+    bottom: 40px;
+    left: 30%;
+}
