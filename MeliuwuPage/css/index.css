@@ -230,6 +230,8 @@ border-bottom: unset;
 .imagen-comision{
     max-width: 100%;
     border-radius: 1rem;
+    height: auto;
+    max-height: auto;
 }
 @media (min-width: 970px) {
 
