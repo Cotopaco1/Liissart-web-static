@@ -167,7 +167,8 @@ border-bottom: unset;
 }
 
 .main{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     row-gap: 1rem;
     margin: 4rem auto;
     width: min(90%, 120rem); 
@@ -176,7 +177,7 @@ border-bottom: unset;
 
 @media (min-width: 768px) {
      .main{
-        
+        display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 4rem;
      }
