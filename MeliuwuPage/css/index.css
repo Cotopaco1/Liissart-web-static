@@ -188,11 +188,13 @@ border-bottom: unset;
     width: 100%;
     
 }
-.redes-bot, .redes-top{
+ .redes-bot, .redes-top{
     display: grid;
     row-gap: 1rem;
+    width: 100%;
 }
-
+ 
+ 
 .redes-top a,
 .redes-bot a{
     background-color: #F59DC3;
@@ -230,10 +232,11 @@ border-bottom: unset;
     grid-template-columns:1fr;
     column-gap: 1rem;
     row-gap: 1rem;
-    
+    width: 100%;
 }
 .contenedor-comisiones-imagenes {
-    max-width: 100%;
+    width: 100%;
+    max-height: auto;
 }
 .imagen-comision{
     max-width: 100%;
