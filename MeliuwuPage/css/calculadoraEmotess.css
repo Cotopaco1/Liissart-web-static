@@ -3,12 +3,13 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 body{
     margin: 0;
     background-image: url(https://i.pinimg.com/originals/0b/6d/83/0b6d83022b5326ca71c715e7c1743dfb.jpg);
-    height: 100vh;
-    width: 100%;
     font-family: 'Arima', cursive;
 }
 
@@ -51,20 +52,13 @@ header h1{
 }
 
 .main{
-    padding: 3rem;
     display: grid;
     row-gap: 2rem;
+    width: min(90%, 50rem);
+    margin: 0 auto;
 }
 
-@media (min-width: 500px)    {
-    .main{
 
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 2rem;
-    }
-     
-}
 
 
 
@@ -78,19 +72,21 @@ section{
     align-items: center;
 
 }
-section h1{
-
-    background-color: papayawhip;
+.sectionH1{
     font-weight: 500;
-    background: rgba(51, 170, 51, .7)
-    
-   
+    background-color: rgba(51, 170, 51, .7);
+    max-width: 100%;
+    padding: 2rem;
+    border-radius: 2px;
+    line-height: 3rem;
 }
+
 section input{
     width: 300px;
-    height: 30px;
+    height: 50px;
     margin: 16px;
     border-radius: 8px;
+    font-size: 1.7rem;
 }
 section input::placeholder{
     text-align: center;
@@ -98,12 +94,11 @@ section input::placeholder{
 }
 section p{
     border: 1px solid none;
-    
     height: 150px;
     width:  300px;
     font-size: xx-large;
-    
     border-radius: 8px;
+    font-weight: bold;
     
 }
 section button{
@@ -114,6 +109,8 @@ section button{
     background-color: #31E5A6;
     border: none;
     transition: transform 0.3s ease;
+    font-size: 2rem;
+    font-weight: bold;
 }
 section button:hover{
     transform: scale(1.1);
