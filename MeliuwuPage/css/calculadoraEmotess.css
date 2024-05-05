@@ -37,11 +37,15 @@ header a{
     position: absolute;
     left: 0%;
     bottom: 0%;
-    font-size: 20px;
     color: black;
     background-color: white;
     padding: 5px;
 
+}
+@media (min-width: 468px) {
+         header a{
+            font-size: 2rem;
+         }
 }
 
 header h1{
@@ -59,7 +63,8 @@ header h1{
 }
 
 .parrafoPrecio{
-    max-height: 4rem;
+    max-height: auto;
+    margin: 0;
 }
 .error{
     color: red;
