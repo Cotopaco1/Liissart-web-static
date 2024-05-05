@@ -58,7 +58,16 @@ header h1{
     margin: 0 auto;
 }
 
-
+.parrafoPrecio{
+    max-height: 4rem;
+}
+.error{
+    color: red;
+    background-color: white;
+    height: auto;
+    padding: 2rem;
+    font-size: 2rem;
+}
 
 
 
